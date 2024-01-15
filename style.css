@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: burlywood;
+}
+.h1{
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.btn-container{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+}
+h1{
+    text-align: center;
+}
+button{
+    padding: 10px;
+
+}
+#increment{
+    background-color: tomato;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+#increment:hover{
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+}
+#reset:hover{
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+}
+#decrement:hover{
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+}
+#decrement{
+    background-color:tomato;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#reset{
+    background-color: tomato;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+#title {
+    position: relative;
+    animation-name: rotate;
+    animation-duration: 5s;
+    /* animation-delay: 1s; */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation: alternate;
+}
+@keyframes rotate{
+    from{
+        top: 0;
+        left: 0;
+    }
+    to{
+left: 0;
+right: 200px
+    }
+}
